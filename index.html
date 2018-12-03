@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 
 	<!--  tittle -->
-	<title>vim cheats_sheets</title>
+	<title>Git cheats_sheets</title>
 	
 	<!-- favicon -->	
 	<link rel=icon href="images/git.png" sizes="32x32 48x48" type="image/png">
@@ -26,10 +26,10 @@
 <body>
 	<!--header-->
 	<header>
-		<h1>Vim Cheats Sheets</h1>
+		<h1>Git Cheats Sheets</h1>
 		<figure>
-				<img src="images/vim-8-ubuntu.jpg" alt="Vim screenshot" title="Vim screenshot">
-				<figcaption>Vim screenshot</figcaption>
+				<img src="images/git.jpg" alt="Git screenshot" title="Git screenshot">
+				<figcaption>Git screenshot</figcaption>
 		</figure>	
 	</header>
 	<!-- On peut bien sûr choisir n'importe quel autre nom que "haut" -->
@@ -53,16 +53,50 @@
 	</nav>
 	<hr>	
 	<section>
-<p>Exemple de pluging VimGame Code Break</p>
+		<h2>Installer Git</h2>
 		<article>
-			<figure>
-				<img src="images/VimGameCodeBreak.gif" alt="Vim Game Code Break gif" title="Vim Game Code Break">
-				<figcaption>Vim Game Code Break</figcaption>
-			</figure>
+			<p><code><mark>$ sudo apt-get install git</mark></code></p>		
 		</article>	
 		<article>
-			<h2>VIM-PLUG</h2>
-
+			<h3>Configuration</h3>
+			<p>Définir le nom que l'on veut pour faire nos Commits</p>
+			<p><code><mark>$ git config --global user.name "[name]"</mark></code</p>
+			<p>Définir email que l'on veut pour faire nos Commits</p>
+			<p><code><mark>$ git config --global user.email "[email address]"</mark></code></p>
+			<p>Active la colorisation </p>
+			<p><code><mark>$ git config --global color.ui auto</mark></code></p>
+		</article>
+		<article>
+			<h4>créer des repositories</h4>
+			<p>Crée un nouveau référentiel local avec le nom spécifié</p>
+			<p><code><mark>$ git init [project-name]</mark></code></p>
+			<p>Télécharge un projet et l'historique complet de ses versions</p>
+			<p><code><mark>$ git clone [url]</mark></code></p>
+		</article>
+		<article>
+			<h5>ligne de commande</h5>
+			<p>ajouter un ou des fichiers</p>
+			<p><code><mark>git add [path + nom du fichier]</mark></code></p>
+			<p>Ajouter tous les fichiers modifiés :</p>
+			<p><code><mark>git add .</mark></code></p>
+			<p>commiter un ou des fichiers</p>
+			<p><code><mark>git commit -m "votre commentaire"</mark></code></p>
+			<p>si vous voulez faire un add en même temps :</p>
+			<p><code><mark>git commit -am "votre commentaire"</mark></code></p>
+			<p>créer une branche</p>
+			<p><code><mark>git checkout -b [ma-branche]</mark></code></p>
+			<p>supprimer un branche</p>
+			<p><code><mark>git branch -D [ma-branche-a-supprimer]</mark></code></p>
+			<p><strong>attention de ne pas être sur cette branche, sinon elle ne sera pas supprimé</strong></p>
+			<p>Lister les branches en local</p>
+			<p><code><mark>git branch</mark></code></p>
+			<p>pusher une branche</p>
+			<p><code><mark>git push origin [ma-branch]</mark></code></p>
+			<p>récuperer le contenu d'une branche sur le remote</p>
+			<p><code><mark>git pull origin [ma-branch]</mark></code></p>
+		</article>
+		<article>
+			<p>Répertorie tous les fichiers nouveaux ou modifiés à valider</p>
 		</article>
 	</section>
 	<br/><br/><br/><br/>
